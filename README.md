@@ -53,7 +53,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 For any inquiries or suggestions, feel free to reach out:
-- **Email:** your-email@example.com
+- **Email:** nk9411123@gmail.com
 - **GitHub:** [Ojhanaveen](https://github.com/Ojhanaveen)
 
 ---
