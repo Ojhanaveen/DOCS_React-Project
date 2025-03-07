@@ -4,7 +4,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion"
 
-const Card = ({data, reference}) => {
+const Card = ({data, reference, onDelete }) => {
   return (
     <motion.div 
       drag dragConstraints={reference} 
@@ -15,10 +15,11 @@ const Card = ({data, reference}) => {
     >
         <FaRegFileAlt />
         <p className='text-sm leading-tight mt-5 font-semibold'>{data.desc}</p>
+
         <div className='footer absolute bottom-0 w-full left-0'>
             <div className='flex items-center justify-between px-8 py-3 mb-3'>
                 <h5>{data.filesize}</h5>
-                <span className='w-7 h-7 bg-zinc-600 rounded-full flex items-center justify-center'>
+                <span className='w-7 h-7 bg-zinc-600 rounded-full flex items-center justify-center cursor-pointer' onClick={onDelete}>
                     {data.close ? <IoClose /> : <MdOutlineFileDownload size=".7em" color="#fff"/>}
                     
                 </span>
